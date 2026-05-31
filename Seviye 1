@@ -1,0 +1,17 @@
+Kullanıcıdan anlık hız ve bulunulan yolun hız sınırı verilerini alarak; eğer anlık hız belirlenen sınırı aşıyorsa ekrana 'Ceza Yazıldı' uyarısını veren, aşmıyorsa hızın yasal sınırlar içinde olduğunu belirten bir koşullu kontrol algoritma .
+
+
+
+
+
+def hiz_kontrol(hiz, sinir):
+    # Eğer hız, sınırı geçerse ceza yazılır
+    if hiz > sinir:
+        return "Ceza Yazıldı"
+    else:
+        return "Hızınız yasal sınırlar içinde."
+
+# Test edelim
+girdi_hiz = 100
+girdi_sinir = 90
+print(f"Soru 15 Çıktısı: {hiz_kontrol(girdi_hiz, girdi_sinir)}")
