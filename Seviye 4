@@ -1,0 +1,17 @@
+İçerisinde birden fazla metinsel veri (String) barındıran dinamik bir kelime listesini inceleyerek, listedeki tüm elemanların karakter uzunluklarını birbiriyle kıyaslayan ve harf sayısı en fazla olan en uzun kelimeyi bulup döndüren bir arama algoritması.
+
+
+
+
+
+# SORU: Liste İçindeki En Uzun Kelimeyi Bulma
+# Açıklama: İçerisinde birden fazla metin (string) barındıran bir kelime listesi incelenecektir.
+# Listedeki tüm kelimelerin harf sayıları (uzunlukları) birbiriyle kıyaslanacak ve
+# karakter sayısı en fazla olan en uzun kelime seçilerek ekrana yazdırılacaktır.
+
+def en_uzun_kelime_bul(kelime_listesi):
+    en_uzun = max(kelime_listesi, key=len)
+    return en_uzun
+
+girdi_liste = ["Ali", "Fatma"]
+print(en_uzun_kelime_bul(girdi_liste))
