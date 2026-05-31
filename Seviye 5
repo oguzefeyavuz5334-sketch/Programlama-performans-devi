@@ -1,0 +1,29 @@
+Kullanıcı dışarıdan ⁠-1⁠ değerini girene kadar sürekli olarak yeni not girişleri kabul eden, ⁠-1⁠ girildiğinde veri almayı durdurup o ana kadar girilen tüm notların aritmetik ortalamasını hesaplayarak ekrana yazdıran bir ⁠while⁠ döngüsü algoritması.
+
+
+
+
+
+# SORU: Döngü İle Not Ortalaması Hesaplama
+# Açıklama: Kullanıcıdan sisteme çıkış komutu verilene kadar sürekli olarak yeni not girişleri
+# alınacaktır. Kullanıcı çıkış yapmak için "-1" değerini girdiğinde veri alma durdurulacak,
+# o ana kadar girilmiş olan tüm notların aritmetik ortalaması hesaplanıp ekrana basılacaktır.
+
+def ortalama_hesapla():
+    toplam = 0
+    sayac = 0
+    
+    while True:
+        not_girisi = float(input("Bir not girin (Çıkmak için -1): "))
+        
+        if not_girisi == -1:
+            break
+            
+        toplam += not_girisi
+        sayac += 1
+    
+    if sayac > 0:
+        ortalama = toplam / sayac
+        return f"Ortalama Sonucu: {ortalama}"
+    else:
+        return "Hiç not girmediniz."
