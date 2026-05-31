@@ -1,0 +1,17 @@
+Verilen bir metin katarı (String) içerisindeki belirli bir yasaklı kelimeyi otomatik olarak tespit eden ve bu kelimenin harflerini kendi karakter uzunluğu kadar yıldız (⁠*⁠) sembolü ile değiştirerek maskeleyen bir sansür algoritması.
+
+
+
+
+
+ # Soru Başlığı: Sansürcü
+# Girdi (Örnek): "Kötü kelime"
+# Beklenen Çıktı: "**** kelime"
+
+def sansurcu(metin, yasakli_kelime):
+    sansur = "*" * len(yasakli_kelime)
+    sansurlu_metin = metin.replace(yasakli_kelime, sansur)
+    return sansurlu_metin
+
+girdi_metin = "Kötü kelime"
+print(sansurcu(girdi_metin, "Kötü"))
