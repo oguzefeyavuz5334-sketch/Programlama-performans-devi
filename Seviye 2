@@ -1,0 +1,16 @@
+Sisteme veya fonksiyon parametresine girilen metre cinsinden bir uzunluk değerini, temel matematiksel dönüşüm formüllerini kullanarak santimetre (CM) birimine çeviren ve sonucu ekrana yazdıran bir algoritma
+
+
+
+
+
+# Soru Başlığı: Metre/CM
+# Girdi (Örnek): 2 (Metre)
+# Beklenen Çıktı: 200 CM
+
+def metre_cm_cevirici(metre):
+    cm_degeri = metre * 100
+    return f"{cm_degeri} CM"
+
+girdi_metre = 2
+print(metre_cm_cevirici(girdi_metre))
